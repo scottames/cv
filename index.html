@@ -19,7 +19,8 @@
     <div id="main">
       <div id="namecontact">
         <div class="container">
-            <div class="namename"><h1><br><br><a href="/" style="text-decoration:none">J. Scott Ames</a></h1></div>
+          <input id="printbutton" type="button" value="Print Resume" onclick="window.open('JScottAmes_InfrastructureEngineer.pdf')" class="no-print" />
+          <div class="namename"><h1><br><br><a href="/" style="text-decoration:none">J. Scott Ames</a></h1></div>
           <div class="namecontacts">
             <a href="mailto:scott@jsames.com" style="text-decoration:none"><span class="value" target="_blank">scott@jsames.com</span></a>
             <span> | </span></span>
@@ -35,7 +36,7 @@
         <h2 class="title">Summary</h2>
         <div class="set">
           <div class="item">
-            <span class="info">Highly competent and organized systems administrator with experience designing, implementing and maintaining systems infrastructures and data-center operations across multiple platforms (Linux, Unix, Windows) with high availability and disaster recovery. Precise, articulate and adept in interdepartmental and client communications. Committed to continuous skill development. Eager to take on new challenges and deliver high quality results, particularly in a collaborative setting.</span>
+            <span class="info">Highly competent and organized infrastructure engineer with experience designing, implementing and maintaining systems infrastructures and data-center operations across multiple platforms (Linux, Unix, Windows) with high availability and disaster recovery. Precise, articulate and adept in interdepartmental and client communications. Committed to continuous skill development. Eager to take on new challenges and deliver high quality results, particularly in a collaborative setting.</span>
           </div>
         </div>
         <div class="clear"> </div>
@@ -46,30 +47,35 @@
             <div class="set">
               <div style="float: left; width: 50%;">
                 <ul>
-                  <li>Cross Platform Administration
+                  <li>Cross Platform Server Administration
                     <ul>
                       <li>Linux (Red Hat, Ubuntu, Cent OS, Solaris, Unix)</li>
                       <li>Windows Server 2000 - 2012 R2</li>
                     </ul>
                   </li>
-                  <li>VMWare, Hyper-V</li>
-                  <li>Major focus on automation and streamlining processes
+                  <li>Virtualization: VMWare, Hyper-V</li>
+                  <li>Automation, orchestration & configuration management
                     <ul>
-                      <li>Configuration Management: Puppet, SCCM</li>
-                      <li>Scripting/Languages: Bash, PowerShell, Ruby, Batch, HTML, CSS</li>
+                      <li>Puppet: roles & profiles, r10k</li>
+                      <li>Bash / Shell, PowerShell/DSC, Ruby</li>
+                      <li>Vagrant, Packer, Atlas</li>
                     </ul>
                   </li>
-                  <li>High availability and disaster recovery</li>
+                  <li>Monitoring: Zabbix, Nagios, Splunk</li>
                 </ul>
               </div>
               <div style="float: right; width: 50%;">
                 <ul>
-                  <li>MySQL, MS SQL</li>
+                  <li>High availability and disaster recovery</li>
+                  <li>Workstation Administration: Windows & OS X</li>
+                  <li>MySQL / MariaDB, MS SQL</li>
                   <li>Training, mentoring and documenting</li>
-                  <li>Systems maintenance and installation: Dell, HP, NetApp, Misc Custom Builds</li>
+                  <li>Systems maintenance and installation</li>
+                    <ul>
+                      <li>Dell, HP, NetApp, Custom Builds</li>
+                    </ul>
                   <li>Storage Area Networks / Network File Systems</li>
-                  <li>Network Administration: HP, Juniper, Dell, In-house</li>
-                  <li>Microsoft Server Administration: System Center Suite 2012 R2, SharePoint 2010/2013, Exchange 2010/2013</li>
+                  <li>Networking & Security: HP, Fortinet, Dell, Nessus</li>
                 </ul>
               </div>
             </div>
@@ -81,25 +87,83 @@
         <div class="set">
           <div class="item">
             <h3>
-              <span class="company l">CARDFREE<font size="2"> | San Francisco, CA</font></span>
+              <span class="company l"><a href="http://www.cardfree.com/" style="text-decoration:none" target="_blank">CARDFREE</a><font size="2"> | San Francisco, CA</font></span>
               <span class="date r">2014 &mdash; Present</span>
             </h3>
             <span class="clear"> </span>
             <span class="job_title">Infrastructure Engineer</span>
             <span class="info">
+              <ul>
+                <li>Engineer &amp; maintain enterprise infrastructure through highly available virtualized solutions</li>
+                <ul>
+                  <li>Focus on engineering and maintaining back end systems and infrastructure for several of the largest white label mobile commerce initiatives in the U.S. spanning two datacenters and hundreds of nodes</li>
+                </ul>
+                <li>Created consistent and immutables server infrastructure allowing for quick and painless builds by engineering environments-based roles and profiles model with Puppet (infrastructure as code)</li>
+                <li>Implement infrastructure automation eliminating hours of manual processes through scripted jobs and reactionary alerts</li>
+                <li>Improve environment health monitoring through Zabbix implementation and Splunk collection analytics, alerts and dashboards</li>
+                <li>Develop highly effective working relationship with developers to achieve efficient, successful solutions and code deployments</li>
+              </ul>
             </span>
             <span class="clear"> </span>
           </div>
+          <div class="section section-projects">
+            <h2 class="projtitle">Projects</h2>
+            <div class="set">
+              <div style="float: left; width: 50%;">
+                <span class="clear"> </span>
+                <h4>
+                  <span class="info l">Puppet</span>
+                </h4>
+                <span class="clear"> </span>
+                <span class="itemproj">
+                  <ul>
+                    <li>Saved hundreds of manual build hours and thousands of dollars spent on an underutilized Puppet Enterprise implementation by migrating to open source Puppet with <a href="https://docs.puppetlabs.com/pe/latest/puppet_assign_configurations.html#assigning-configuration-data-with-role-and-profile-modules" style="text-decoration:none" target="_blank">roles and profiles model</a> for five environments and three Puppet master servers</li>
+                    <li>Created strong, well documented workflow for contribution and deployment with the use of Git, R10k, Hiera, custom ruby Facter facts and tests for functionality, style and syntax</li>
+                  </ul>
+                <h4>
+                  <span class="info l">Workstation Build and Maintenance</span>
+                </h4>
+                <span class="clear"> </span>
+                <span class="itemproj">
+                  <ul>
+                    <li>Recognized and improved inefficient workstation  (Mac / OS X) onboarding and maintenance process by building and documenting a new solution that was successfully handed off for use by others</li>
+                  </ul>
+              </div>
+              <div style="float: right; width: 50%;">
+                <h4>
+                  <span class="info l">Infrastructure Monitoring</span>
+                </h4>
+                <span class="clear"></span>
+                <span class="itemproj">
+                  <ul>
+                  <li>Gained redundant health monitoring quickly utilizing Puppet to implement multiple Zabbix instances in multiple environments for greater insight into environment and faster, more reliable issue response times</li>
+                  </ul>
+                </span>
+                <span class="clear"> </span>
+                <h4>
+                  <span class="info l">Local development platform</span>
+                </h4>
+                <span class="clear"></span>
+                <span class="itemproj">
+                  <ul>
+                  <li>Contribute to local development platform by utilizing Puppet, Packer and Vagrant to build custom vagrant images that allow developers and team members to run solutions on virtual machines nearly identical to production eliminating numerous factors that can cause development and deployment issues downstream</li>
+                  </ul>
+                </span>
+                <span class="clear"> </span>
+              </div>
+            </div>
+            <div class="clear"> </div>
+          </div>
           <div class="item">
             <h3>
-              <span class="company l">Westerra Credit Union<font size="2"> | Denver, CO</font></span>
+              <span class="company l"><a href="https://www.westerracu.com/about-us" style="text-decoration:none" target="_blank">Westerra Credit Union</a><font size="2"> | Denver, CO</font></span>
               <span class="date r">2010 &mdash; 2014</span>
             </h3>
             <span class="clear"> </span>
-            <span class="job_title">System Administrator I &amp; II</span>
+            <span class="job_title">System Administrator II</span>
             <span class="info">
               <ul>
-                <li>Maintain operations of enterprise server and desktop infrastructure (100+ server, 400+ desktop)</li>
+                <li>Maintain, implement and improve operations of enterprise server and desktop infrastructure (100+ server, 400+ desktop)</li>
                 <ul>
                   <li>Linux, Windows and Unix - Physical &amp; Virtual environment (VMWare + Hyper-V)</li>
                   <li>Primary on Linux environment, Nagios/Orion (Server Monitoring), Puppet/System Center (System Configuration), SharePoint</li>
@@ -170,7 +234,6 @@
                   </ul>
                 </span>
                 <span class="clear"> </span>
-
                 <h4>
                   <span class="info l">Change Management Solution</span>
                 </h4>
@@ -181,7 +244,6 @@
                   </ul>
                 </span>
                 <span class="clear"> </span>
-
                 <h4>
                   <span class="info l">Sharepoint 2013 Migration</span>
                 </h4>
@@ -202,7 +264,7 @@
               <span class="date r">2009 &mdash; 2010</span>
             </h3>
             <span class="clear"> </span>
-            <span class="job_title">IT Support Technician I &amp; II</span>
+            <span class="job_title">IT Support Technician II</span>
             <span class="info">
               <ul>
                 <li>Install, maintain, troubleshoot and repair computer systems, hardware and computer peripherals both on-site and remotely</li>
@@ -307,7 +369,7 @@
                 <a href="http://www.aromachurch.tv" style="text-decoration:none" target="_blank">Aroma Church<font size="2"> | Lone Tree, CO</font>
                 </a>
               </span>
-              <span class="date r">2012 - Present</span>
+              <span class="date r">2012 - 2014</span>
             </h3>
               <span class="clear"></span>
               <span> IT Consultant &amp; Web Administration
@@ -322,7 +384,7 @@
                 <a href="http://impactethiopia.com/" style="text-decoration:none" target="_blank">Impact Ethiopia<font size="2"> | Addis Abeba, Ethiopia</font>
                 </a>
               </span>
-              <span class="date r">2011 - Present</span>
+              <span class="date r">2011 - 2014</span>
             </h3>
             <span class="clear"> </span>
             <span>Ethiopia Mission Work</span>
