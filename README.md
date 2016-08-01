@@ -1,6 +1,6 @@
 CV
 ------
 
-[J. Scott Ames](http://scott.jsames.com/cv)
+[J. Scott Ames](http://scott.ames.sh/cv)
 
 My curriculum vitæ and resume
