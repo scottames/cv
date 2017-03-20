@@ -59,17 +59,17 @@ a {
 }
 #main {
   background: #fff;
-  width: 900px; 
+  width: 900px;
   padding: 35px;
   margin: 0 auto 15px auto;
-  overflow: hidden; 
+  overflow: hidden;
   box-shadow: 0 0 6px #ccc;
 }
 #namecontact {
-  position: fixed; 
-  top: 0px; 
-  width:900px; 
-  height: 100px; 
+  position: fixed;
+  top: 0px;
+  width:900px;
+  height: 100px;
   background: #fff;
   z-index: 100;
 }
@@ -96,7 +96,7 @@ a {
   color: #999;
 }
 p label {
-  font-family: 'Oswald', Helvetica, Arial, serif; 
+  font-family: 'Oswald', Helvetica, Arial, serif;
   font-size: 110%;
   margin-right: 10px;
 }
@@ -254,7 +254,7 @@ p label span.colon {
 #printbutton {
   position: fixed;
   top: 10px;
-  right: 400px;
+  right: 500px;
   text-align: right;
   z-index: 99999;
 }
